@@ -18,7 +18,7 @@
    }
 
 
-  
+  @media (min-width:768px){
       body {
          margin: 0;
          padding: 0;
@@ -72,10 +72,10 @@
        .mobile-image {
          display: none; /* Hide mobile image by default */
        }
-   
+   }
       
 
-   @media (max-width: 620px) {
+   @media (max-width: 767px) {
       body {
          margin: 0;
          padding: 0;
