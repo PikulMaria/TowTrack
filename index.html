@@ -9,36 +9,25 @@
 	
 	
 </head>
-<script src="https://wurfl.io/wurfl.js">
-	
-	var userAgent = navigator.userAgent;
-	var device = WURFL.get(userAgent);
+<script>
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+    .test(navigator.userAgent)) {
 
-	if (device.form_factor === "Desktop") {
-		var css = document.createElement("link");
- 		css.setAttribute("rel", "stylesheet");
-  		css.setAttribute("type", "text/css");
-  		css.setAttribute("href", "./desktop.css");
-  		document.head.appendChild(css);
-		console.log("This is a desktop device.");
-	} 
-
-	else if (device.form_factor === "Tablet") {
 		var css = document.createElement("link");
  		css.setAttribute("rel", "stylesheet");
   		css.setAttribute("type", "text/css");
   		css.setAttribute("href", "./mobile.css");
   		document.head.appendChild(css);
-	} 
 
-	else if (device.form_factor === "Smartphone") {
+} 
+	else {
 		var css = document.createElement("link");
- 		css.setAttribute("rel", "stylesheet");
-  		css.setAttribute("type", "text/css");
-  		css.setAttribute("href", "./mobile.css");
-  		document.head.appendChild(css);
-	} 
-
+			css.setAttribute("rel", "stylesheet");
+			css.setAttribute("type", "text/css");
+			css.setAttribute("href", "./desktop.css");
+			document.head.appendChild(css);
+			console.log("This is a desktop device.");
+	}
 </script>
 <body>
 	<div class="container">
