@@ -25,11 +25,27 @@
 			css.setAttribute("href", "./desktop.css");
 			document.head.appendChild(css);
 			console.log("This is a desktop device.");
+			var backgrounds = [
+			'./image/one.jpg',
+			'./image/two.jpg',
+			'./image/three.jpg',
+			'./image/four.jpg',
+			'./image/five.jpg',
+		];
+
+		function changeBackground() {
+			var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+			document.body.style.backgroundImage = 'url(' + randomBackground + ')';
+		}
+
+		setInterval(changeBackground, 5000); // Change the background every 5 seconds
+
 	}
+	
 </script>
 
 <body>
-	<div class="up-container">
+
 		<div class="text-container">
 			
 			<p class="logo">Эвакуатор 24/7</p>
@@ -50,7 +66,7 @@
 		<div class="text-container2">
 			<p class="phone">8-985-777-56-15</p>
 			<p class="email">botygin90@mail.ru</p> <br><br>
-			<p class="developed"> Developed by PIKUL </p>
+			
 		</div>
 		<div class="bottom-container">
 			<div class="img-container">
@@ -67,5 +83,6 @@
 			</div>	
 		</div>
 	</div>
+	<p class="developed"> Developed by PIKUL </p>
 </body>
 </html>
