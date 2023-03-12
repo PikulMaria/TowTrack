@@ -20,13 +20,9 @@
 
  
       body {
-         overflow: scroll;
-         overflow-x: hidden;
-         width: auto;
-         min-height: 800px;
+        overflow: hidden;
          margin: 0;
          padding: 10 px;
-         align-items: end;
          background: url(./image/one.jpg) no-repeat center center fixed;
          background-size: cover;
          font-family: 'Montserrat';
@@ -34,34 +30,14 @@
          text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
       }
       
-      .information-conatiner {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        float: right;
-        margin-right: 50px;
-        align-content: flex-end;
-      }
-
-      .up-container {
-        width: auto;
-        margin: 50px;
-        padding: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .bottom-container {
-         max-width: 1200px;
-         margin: 20px;
+      .container {
+         max-width: 1240px;
+         margin: 0 auto;
          padding: 0 auto;
-         display: inline-block;
-         margin-left: auto;
+         display: flex;
+         flex-wrap: wrap;
          justify-content: space-between;
          align-items: center;
-         display: flex;
-         flex-direction: row;
-         flex-wrap: nowrap;
       }
       
       
@@ -71,25 +47,23 @@
          margin: 20px;
       }
       .text-container2 {
-        width: auto;
-        text-align: center;   
-        display: inline-block;
-        margin-left: auto;
-        margin-top: 20px;
-      }
+        
+        text-align: center;
+        margin-right: 100px;
+        
+     }
       
      
       
       .img-container {
          flex: 1;
          margin-left: 20px;
-         text-align: center;          
+         text-align: center;
+         
       }
       
-      .icon {
-         min-width: 50px;
-         max-width: 100px;
-         margin-left: 10px;
+      img {
+         max-width: 100%;
          height: auto;
       }
       .desktop-image {
