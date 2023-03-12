@@ -25,7 +25,23 @@
 			css.setAttribute("href", "./desktop.css");
 			document.head.appendChild(css);
 			console.log("This is a desktop device.");
+			var backgrounds = [
+			'./image/one.jpg',
+			'./image/two.jpg',
+			'./image/three.jpg',
+			'./image/four.jpg',
+			'./image/five.jpg',
+		];
+
+		function changeBackground() {
+			var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+			document.body.style.backgroundImage = 'url(' + randomBackground + ')';
+		}
+
+		setInterval(changeBackground, 5000); // Change the background every 5 seconds
+
 	}
+	
 </script>
 
 <body>
