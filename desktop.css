@@ -20,25 +20,45 @@
 
  
       body {
-        overflow: hidden;
-         margin: 0;
-         padding: 10 px;
+         overflow: scroll;
+         overflow-x: hidden;
          background: url(./image/one.jpg) no-repeat center center fixed;
          background-size: cover;
          font-family: 'Montserrat';
          color: #fff;
          text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
       }
-      
-      .container {
-         max-width: 1240px;
-         margin: 0 auto;
-         padding: 0 auto;
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-         align-items: center;
+
+      .information-conatiner {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        float: right;
+        margin-right: 50px;
+        align-content: flex-end;
       }
+
+      .up-container {
+        width: auto;
+        margin: 50px;
+        padding: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .bottom-container {
+        max-width: 1200px;
+        margin: 20px;
+        padding: 0 auto;
+        display: inline-block;
+        margin-left: auto;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+     }
       
       
       .text-container {
@@ -47,11 +67,12 @@
          margin: 20px;
       }
       .text-container2 {
-        
-        text-align: center;
-        margin-right: 100px;
-        
-     }
+        width: auto; 
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
       
      
       
@@ -61,6 +82,13 @@
          text-align: center;
          
       }
+
+      .icon {
+        min-width: 50px;
+        max-width: 100px;
+        margin-left: 10px;
+        height: auto;
+     }
       
       img {
          max-width: 100%;
@@ -120,7 +148,7 @@
          line-height: 66px;
          /* identical to box height */
          
-         text-align: center;
+         text-align: right;
          
          color: #FFFFFF;
        }
@@ -133,7 +161,7 @@
          line-height: 49px;
          /* identical to box height */
          
-         text-align: center;
+         text-align: right;
          
          color: #FFFFFF;
        }
@@ -182,7 +210,9 @@
 
       }
       .developed{
-        text-align: left;    
+        text-align: left;
+        display: inline-block;
+        margin-left: auto;
       }
 
    
