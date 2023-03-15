@@ -40,13 +40,15 @@
 			image.src = backgrounds[i];
 			loadedImages.push(image);
 		}
-
+		
 		function changeBackground() {
-			var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-			document.body.style.backgroundImage = 'url(' + randomBackground + ')';
+			for (var j = 0; j < backgrounds.length; j++){
+			var randomBackground = backgrounds[i];
+			document.body.style.backgroundImage = 'url(' + randomBackground + ')'
+		}
 		}
 
-		setInterval(changeBackground, 5000); // Change the background every 5 seconds
+		setInterval(changeBackground, 4000); // Change the background every 5 seconds
 
 	}
 	
