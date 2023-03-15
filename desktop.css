@@ -24,7 +24,7 @@
         
          overflow: scroll;
          overflow-x: hidden;
-         background: url(./image/Desktop/one.jpg) no-repeat center center fixed;
+         background: url(./image/Desktop/1.jpg) no-repeat center center fixed;
          transition: background 1s ease;
          background-size: cover;
          font-family: 'Montserrat';

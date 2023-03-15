@@ -18,30 +18,29 @@
   		document.head.appendChild(css);
 
 } 
-	else {
+else {
 		var css = document.createElement("link");
 			css.setAttribute("rel", "stylesheet");
 			css.setAttribute("type", "text/css");
 			css.setAttribute("href", "./desktop.css");
 			document.head.appendChild(css);
+			console.log("This is a desktop device.");
 			
-			
+			var loadedImages = [];
+			for (var i = 1; i < 18; i++) {
+				var image = new Image();
+				image.src = './image/Desktop/' + i + '.jpg';
+				loadedImages.push(image);
+			}
+			var k = 1;
 
-		var loadedImages = [];
-		for (var i = 0; i < 16; i++) {
-			var image = new Image();
-			image.src = './image/Desktop/' + i + '.jpg';
-			loadedImages.push(image);
-		}
-		
-		function changeBackground() {
-			for (var j = 0; j < 16; j++){
-			
-			document.body.style.backgroundImage = 'url(' + document.body.style.backgroundImage = 'url(' + './image/Desktop/' + j + '.jpg)' + ')'
-		}
-		}
+			function changeBackground() {
+				document.body.style.backgroundImage = 'url(./image/Desktop/' + k + '.jpg)';
+				k++;
+				if(k==18) k=1;
+			}
 
-		setInterval(changeBackground, 4000); // Change the background every 5 seconds
+			setInterval(changeBackground, 4000); // Change the background every 5 seconds
 
 	}
 	
@@ -88,6 +87,7 @@
 		</div>
 		
 	</div>
+	
 	<p class="developed"> Developed by PIKUL </p>
 </body>
 </html>
