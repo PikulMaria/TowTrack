@@ -25,6 +25,7 @@
 			css.setAttribute("href", "./desktop.css");
 			document.head.appendChild(css);
 			console.log("This is a desktop device.");
+			
 			var backgrounds = [
 			'./image/Desktop/one.jpg',
 			'./image/Desktop/two.jpg',
@@ -32,6 +33,13 @@
 			'./image/Desktop/four.jpg',
 			'./image/Desktop/five.jpg',
 		];
+
+		var loadedImages = [];
+		for (var i = 0; i < backgrounds.length; i++) {
+			var image = new Image();
+			image.src = backgrounds[i];
+			loadedImages.push(image);
+		}
 
 		function changeBackground() {
 			var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
