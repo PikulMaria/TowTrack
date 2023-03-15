@@ -24,27 +24,20 @@
 			css.setAttribute("type", "text/css");
 			css.setAttribute("href", "./desktop.css");
 			document.head.appendChild(css);
-			console.log("This is a desktop device.");
 			
-			var backgrounds = [
-			'./image/Desktop/one.jpg',
-			'./image/Desktop/two.jpg',
-			'./image/Desktop/three.jpg',
-			'./image/Desktop/four.jpg',
-			'./image/Desktop/five.jpg',
-		];
+			
 
 		var loadedImages = [];
-		for (var i = 0; i < backgrounds.length; i++) {
+		for (var i = 0; i < 16; i++) {
 			var image = new Image();
-			image.src = backgrounds[i];
+			image.src = './image/Desktop/' + i + '.jpg';
 			loadedImages.push(image);
 		}
 		
 		function changeBackground() {
-			for (var j = 0; j < backgrounds.length; j++){
-			var randomBackground = backgrounds[i];
-			document.body.style.backgroundImage = 'url(' + randomBackground + ')'
+			for (var j = 0; j < 16; j++){
+			
+			document.body.style.backgroundImage = 'url(' + document.body.style.backgroundImage = 'url(' './image/Desktop/' + j + '.jpg' ')' + ')'
 		}
 		}
 
