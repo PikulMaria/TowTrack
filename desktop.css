@@ -18,7 +18,10 @@
    }
 
 
-
+   @keyframes fade-in {
+    from { opacity: 0; } /* Start with 0 opacity */
+    to { opacity: 1; } /* End with full opacity */
+  }
  
       body {
         
@@ -33,6 +36,11 @@
       }
 
       .information-conatiner {
+        opacity: 0; /* Start with 0 opacity */
+        animation-name: fade-in; /* Name the animation */
+        animation-duration: 7s; /* Set the duration of the animation */
+        animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+        
         width: 100% auto;
         display: flex;
         flex-direction: row;
@@ -42,6 +50,11 @@
         align-content: flex-end;
       }
       .information-conatiner2 {
+        opacity: 0; /* Start with 0 opacity */
+        animation-name: fade-in; /* Name the animation */
+        animation-duration: 8s; /* Set the duration of the animation */
+        animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+        
         width: 100%; 
         float: left;
         margin-right: 50px;
@@ -110,7 +123,11 @@
          display: none; /* Hide mobile image by default */
        }
        .logo {                      /*Style logo*/
-         font-family: 'Montserrat';
+        opacity: 0; /* Start with 0 opacity */
+        animation-name: fade-in; /* Name the animation */
+        animation-duration: 2s; /* Set the duration of the animation */
+        animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+        font-family: 'Montserrat';
          font-style: italic;
          font-weight: 700;
          font-size: 64px;
@@ -119,8 +136,13 @@
          text-align: right;
          color: #FFFFFF;
        }
+       
        .paragraph{
-         
+        opacity: 0; /* Start with 0 opacity */
+        animation-name: fade-in; /* Name the animation */
+        animation-duration: 4s; /* Set the duration of the animation */
+        animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+        
          font-family: 'Montserrat';
          font-style: italic;
          font-weight: 700;
@@ -137,6 +159,11 @@
        
        
        .ps{
+        opacity: 0; /* Start with 0 opacity */
+        animation-name: fade-in; /* Name the animation */
+        animation-duration: 6s; /* Set the duration of the animation */
+        animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+        
          font-family: 'Montserrat';
          font-style: italic;
          font-weight: 700;
@@ -180,6 +207,11 @@
       }
       
       .circle-number-list {
+        opacity: 0; /* Start with 0 opacity */
+        animation-name: fade-in; /* Name the animation */
+        animation-duration: 5s; /* Set the duration of the animation */
+        animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+        
         list-style-type: none;
         margin-left: 0;
         padding-left: 0;
@@ -210,10 +242,40 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
+        margin-bottom: 40px;
+        margin-left: 40px;
         /* identical to box height */
 
          color: #FFFFFF;
 
+      }
+      .link{
+        color: #ffffff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+      }
+      .link:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px; /* Высота линии */
+        background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+      }
+      .link:hover:after {
+        content: "";
+          width: 100%;
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -3px;
+          height: 2px; /* Высота линии */
+          background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+          transition: width 0.5s;  /* Время эффекта */
       }
       
 
