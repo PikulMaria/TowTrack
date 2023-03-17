@@ -1,78 +1,282 @@
 /* montserrat-regular - cyrillic_latin */
 @font-face {
-     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-     font-family: 'Montserrat';
-     font-style: normal;
-     font-weight: 400;
-     src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   src: url('./fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('./fonts/montserrat-v25-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* montserrat-700italic - cyrillic_latin */
+ @font-face {
+   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Montserrat';
+   font-style: italic;
+   font-weight: 700;
+   src: url('./fonts/montserrat-v25-cyrillic_latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('./fonts/montserrat-v25-cyrillic_latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
+
+ @keyframes fade-in {
+  from { opacity: 0; } /* Start with 0 opacity */
+  to { opacity: 1; } /* End with full opacity */
+}
+
+    body {
+      
+       overflow: scroll;
+       overflow-x: hidden;
+       background: url(./image/Mobile/1.jpg) no-repeat center center fixed;
+       transition: background 1s ease;
+       background-size: cover;
+       font-family: 'Montserrat';
+       color: #fff;
+       text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    }
+
+    .information-conatiner {
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 7s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      
+      width: 100% auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      float: center;
+      margin-right: 50px;
+      align-content: flex-end;
+    }
+    .information-conatiner2 {
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 8s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      
+      width: 100%; 
+      float: left;
+      margin-right: 50px;
+    }
+
+    .up-container {
+      width: auto;
+      margin: 50px;
+      padding: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .bottom-container {
+      max-width: 1200px;
+      margin: 20px;
+      padding: 0 auto;
+      display: inline-block;
+      margin-left: auto;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
    }
-   /* montserrat-700italic - cyrillic_latin */
-   @font-face {
-     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-     font-family: 'Montserrat';
-     font-style: italic;
-     font-weight: 700;
-     src: url('../fonts/montserrat-v25-cyrillic_latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-cyrillic_latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    
+    
+    .text-container {
+       flex: 1;
+       text-align: center;
+       margin: 20px;
+    }
+    .text-container2 {
+      width: auto; 
+      display: inline-block;
+      margin-left: auto;
+      margin-right: 20px;
+      margin-top: 60px;
+    }
+    
+   
+    
+    .img-container {
+       flex: 1;
+       margin-left: 20px;
+       text-align: center;
+       
+    }
+
+    .icon {
+      min-width: 50px;
+      max-width: 100px;
+      margin-left: 10px;
+      height: auto;
    }
-
-
-      body {
-         margin: 0;
-         padding: 0;
-         background: url(./image/Mobile/1.jpg) no-repeat;
-         background-size: cover;
-         font-family: 'Montserrat';
-         color: #fff;
-         text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-      }
-      .desktop-image {
-         display: none; /* Hide desktop image on mobile */
-       }
+    
+    img {
+       max-width: 100%;
+       height: auto;
+    }
+    .desktop-image {
+       display: block; /* Display desktop image by default */
+     }
    
-       .mobile-image {
-         display: block; /* Display mobile image on mobile */
-       }
-
-      .container {
-         padding: 25px;
-      }
+     .mobile-image {
+       display: none; /* Hide mobile image by default */
+     }
+     .logo {                      /*Style logo*/
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 2s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      font-family: 'Montserrat';
+       font-style: italic;
+       font-weight: 700;
+       font-size: 64px;
+       line-height: 78px;
+       /* identical to box height */
+       text-align: center;
+       color: #FFFFFF;
+     }
+     
+     .paragraph{
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 4s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
       
-      .text-container {
-         flex: 0 0 100%;
-         margin: 0;
-      }
+       font-family: 'Montserrat';
+       font-style: italic;
+       font-weight: 700;
+       font-size: 32px;
+       line-height: 39px;
+       /* identical to box height */
+       text-align: center;
+       color: #FFFFFF;
+     }
+     .paragraph img{
+      height: 4%;
+      width: 4%;
+     }
+     
+     
+     .ps{
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 6s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
       
-      h1 {
-         font-size: 2em;
-      }
+       font-family: 'Montserrat';
+       font-style: italic;
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 44px;
+       /* identical to box height */
+       
+       text-align: center;
+       
+       color: #FFFFFF;
+     }
+     .phone{
+       font-family: 'Montserrat';
+       font-style: italic;
+       font-weight: 700;
+       font-size: 54px;
+       line-height: 66px;
+       /* identical to box height */
+       
+       text-align: center;
+       
+       color: #FFFFFF;
+     }
+     
+     .email{
+       font-family: 'Montserrat';
+       font-style: italic;
+       font-weight: 700;
+       font-size: 40px;
+       line-height: 49px;
+       /* identical to box height */
+       
+       text-align: center;
+       
+       color: #FFFFFF;
+     }
+     .circle-number-list {
+      counter-reset: item;
+      list-style: none;
+      padding: 0;
+    }
+    
+    .circle-number-list {
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 5s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
       
-      p {
-         font-size: 1em;
-      }
-      
-      .img-container {
-         flex: 0 0 100%;
-      }
-      .logo{
-         position: absolute;
-         width: 279px;
-         height: 118px;
-         left: 55px;
-         top: 0px;
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0;
+      font-family: 'Montserrat';
+       font-style: italic;
+       font-weight: 700;
+       font-size: 24px;
+       line-height: 29px;
+       text-align: center;
 
-         font-family: 'Montserrat';
-         font-style: italic;
-         font-weight: 700;
-         font-size: 48px;
-         line-height: 59px;
-         text-align: center;
+       color: #FFFFFF;
+       
+    }
+    li{text-indent: 30px;}
+    .circle-number-list li::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+    .developed{
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      margin-left: 40px;
+      /* identical to box height */
 
-         color: #FFFFFF;
+       color: #FFFFFF;
 
-         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-      }
-   
-  
-  
+    }
+    .link{
+      color: #ffffff; /* Цвет обычной ссылки */
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
+    }
+    .link:after{
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px; /* Высота линии */
+      background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
+      transition: width 0.5s; /* Время эффекта */
+    }
+    .link:hover:after {
+      content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px; /* Высота линии */
+        background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+    }
+    
+
+ 

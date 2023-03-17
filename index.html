@@ -10,7 +10,7 @@
 <script>
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
     .test(navigator.userAgent)) {
-
+		window.location.href = "./mobile.html";
 		var css = document.createElement("link");
  		css.setAttribute("rel", "stylesheet");
   		css.setAttribute("type", "text/css");
@@ -33,12 +33,13 @@
 			setInterval(changeBackground, 4000); // Change the background every 5 seconds
 } 
 else {
+	window.location.href = "./desktop.html";
+
 		var css = document.createElement("link");
 			css.setAttribute("rel", "stylesheet");
 			css.setAttribute("type", "text/css");
 			css.setAttribute("href", "./desktop.css");
 			document.head.appendChild(css);
-			console.log("This is a desktop device.");
 			
 			var loadedImages = [];
 			for (var i = 1; i < 18; i++) {
@@ -60,52 +61,4 @@ else {
 	
 </script>
 
-<body>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-	<div class="up-container">
-		<div class="text-container">
-			
-			<p class="logo">Эвакуатор 24/7</p>
-			<br>
-			<p class="paragraph">Техпомощь на дороге <img class="icon" src="./image/wrench.png" alt="tech"></p><br>
-			<p class="paragraph">Доступные цены <img class="icon" src="./image/coin.png" alt="coin"></p><br>
-			<p class="paragraph">Круглосуточно <img class="icon" src="./image/clock.png" alt="clock"></p><br>
-			<ol class="circle-number-list">
-				<li>  Эвакуация автомобилей, мотоциклов, квадроциклов,<br> а также различной спецтехники</li>
-				<li>  Эвакуация из кювета, снежного и грязевого плена</li>
-				<li>  Гарантирую безопасную транспортировку и качественную техпомощь</li>
-			</ol><br><br>
-			<p class="ps">Обращайтесь, буду рад Вам помочь!</p><br>
-			
-		</div>
-	</div>
-	<div class="information-conatiner">	
-		<div class="text-container2">
-			<p class="phone">8-985-777-56-15</p>
-			<p class="email">botygin90@mail.ru</p> <br><br>
-		</div>
-		<div class="bottom-container">
-			<div class="img-container">
-				<img src="./image/qrvk.png" alt="Desktop Image" class="desktop-image">
-				<img src="./image/iconvk.png" alt="Mobile Image" class="mobile-image">
-			</div>
-			<div class="img-container">
-				<img src="./image/qvwapp.png" alt="Desktop Image" class="desktop-image">
-				<img src="./image/iconwapp.png" alt="Mobile Image" class="mobile-image">
-			</div>
-			<div class="img-container">
-				<img src="./image/qrtelega.png" alt="Desktop Image" class="desktop-image">
-				<img src="./image/icontelega.png" alt="Mobile Image" class="mobile-image">
-			</div>	
-		</div>
-		
-	</div>
-	
-	<div class="information-conatiner2">
-		<p class="developed"> Developed by <a href="https://www.example.com" class="link">PIKUL</a></p>
-	</div>
-	
-	
-</body>
-</html>
+ </html>
