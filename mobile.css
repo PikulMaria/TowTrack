@@ -27,7 +27,7 @@
       
        overflow: scroll;
        overflow-x: hidden;
-       background: url(./image/Mobile/1.jpg) no-repeat center center fixed;
+       background: url(./image/Mobile/1.jpg) no-repeat;
        transition: background 1s ease;
        background-size: cover;
        font-family: 'Montserrat';
@@ -46,7 +46,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       float: center;
-      margin-right: 50px;
       align-content: flex-end;
     }
     .information-conatiner2 {
@@ -57,49 +56,50 @@
       
       width: 100%; 
       float: center;
-      margin-right: 50px;
     }
 
     .up-container {
       width: auto;
-      margin: 50px;
       padding: 0 auto;
       justify-content: space-between;
       align-items: center;
     }
 
     .bottom-container {
-      max-width: 1200px;
-      margin: 20px;
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 7s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      
+      width: auto;
       padding: 0 auto;
-      display: inline-block;
-      margin-left: auto;
       justify-content: space-between;
       align-items: center;
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      margin: 50px;
+      
    }
     
     
     .text-container {
        flex: 1;
        text-align: center;
-       margin: 20px;
     }
     .text-container2 {
-      width: auto; 
-      display: inline-block;
-      margin-left: auto;
-      margin-right: 20px;
-      margin-top: 60px;
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 7s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      
+      flex: 1;
+      
+      text-align: center;
     }
     
    
     
     .img-container {
        flex: 1;
-       margin-left: 20px;
        text-align: center;
        
     }
@@ -107,7 +107,6 @@
     .icon {
       min-width: 50px;
       max-width: 100px;
-      margin-left: 10px;
       height: auto;
    }
     
@@ -118,17 +117,18 @@
     
      .logo {                      /*Style logo*/
       /* Эвакуатор 24/7 */
-
-
-     
-
+      opacity: 0; /* Start with 0 opacity */
+      animation-name: fade-in; /* Name the animation */
+      animation-duration: 1s; /* Set the duration of the animation */
+      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      
       font-family: 'Montserrat';
       font-style: italic;
       font-weight: 700;
       font-size: 48px;
       line-height: 59px;
       text-align: center;
-
+      margin-bottom: 200px;
       color: #FFFFFF;
 
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
@@ -151,7 +151,6 @@
       
       color: #FFFFFF;
       
-      border: 1px solid #242424;
      }
      .paragraph img{
       height: 4%;
@@ -164,18 +163,16 @@
       animation-name: fade-in; /* Name the animation */
       animation-duration: 6s; /* Set the duration of the animation */
       animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
-      
-       font-family: 'Montserrat';
-       font-style: italic;
-       font-weight: 700;
-       font-size: 36px;
-       line-height: 44px;
-       /* identical to box height */
-       
-       text-align: center;
-       
-       color: #FFFFFF;
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #FFFFFF;
      }
+
      .phone{
       
       
@@ -209,6 +206,9 @@
       counter-reset: item;
       list-style: none;
       padding: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 8px;
     }
     
     .circle-number-list {
@@ -228,7 +228,6 @@
 
       color: #FFFFFF;
 
-      border: 1px solid #242424;
        
     }
     li{text-indent: 30px;}
@@ -239,7 +238,6 @@
       height: 5px;
       border-radius: 50%;
       background-color: rgb(255, 255, 255);
-      margin-right: 10px;
       margin-bottom: 5px;
     }
     .developed{
@@ -256,7 +254,6 @@
 
       color: #FFFFFF;
 
-      border: 2px solid #000000;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 
     }

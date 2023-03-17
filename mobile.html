@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="./mobile.css">
     <title>Document</title>
 </head>
+<script>
+	var css = document.createElement("link");
+ 		css.setAttribute("rel", "stylesheet");
+  		css.setAttribute("type", "text/css");
+  		css.setAttribute("href", "./mobile.css");
+  		document.head.appendChild(css);
+		  var loadedImages = [];
+			for (var i = 1; i < 18; i++) {
+				var image = new Image();
+				image.src = './image/Mobile/' + i + '.jpg';
+				loadedImages.push(image);
+			}
+			var k = 1;
+
+			function changeBackground() {
+				document.body.style.backgroundImage = 'url(./image/Mobile/' + k + '.jpg)';
+				k++;
+				if(k==18) k=1;
+			}
+
+			setInterval(changeBackground, 4000);
+</script>
 <body>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
@@ -17,33 +39,34 @@
 			<p class="logo">Эвакуатор 24/7</p>
 			<br>
 			<p class="paragraph">• Техпомощь на дороге •<br>• Доступные цены •<br>• Круглосуточно •</p><br>
-			<ol class="circle-number-list">
-				<li>  Эвакуация автомобилей, мотоциклов, квадроциклов,<br> а также различной спецтехники</li>
-				<li>  Эвакуация из кювета, снежного и грязевого плена</li>
-				<li>  Гарантирую безопасную транспортировку и качественную техпомощь</li>
-			</ol><br><br>
-			<p class="ps">Обращайтесь, буду рад Вам помочь!</p><br>
 			
+				<p class="circle-number-list">  Эвакуация автомобилей, мотоциклов, квадроциклов,<br> а также различной спецтехники</p>
+					<p class="circle-number-list">  Эвакуация из кювета, снежного и грязевого плена</p>
+						<p class="circle-number-list">  Гарантирую безопасную транспортировку и качественную техпомощь</p>
+			<br><br>
+			<p class="ps">Обращайтесь, буду рад Вам помочь!</p><br>
+			<br>
 		</div>
 	</div>
-	<div class="information-conatiner">	
+	
 		<div class="text-container2">
 			<p class="phone">8-985-777-56-15</p>
-			<p class="email">botygin90@mail.ru</p> <br><br>
+			<p class="email">botygin90@mail.ru</p>
+			
 		</div>
 		<div class="bottom-container">
 			<div class="img-container">
-				<img src="./image/iconvk.png" alt="Mobile Image">
+				<a href="https://vk.com/evakkolomnavsk"><img src="./image/iconvk.png" alt="Mobile Image"></a>
 			</div>
 			<div class="img-container">
-				<img src="./image/iconwapp.png" alt="Mobile Image">
+				<a href="https://api.whatsapp.com/message/F6WKXGIVVFASG1?autoload=1&app_absent=0"><img  src="./image/iconwapp.png" alt="Mobile Image"></a>
 			</div>
 			<div class="img-container">
-				<img src="./image/icontelega.png" alt="Mobile Image">
+				<a href="https://t.me/+79857775615"><img src="./image/icontelega.png" alt="Mobile Image"></a>
 			</div>	
 		</div>
 		
-	</div>
+	
 	
 	<div class="information-conatiner2">
 		<p class="developed"> Developed by <a href="https://www.example.com" class="link">PIKUL</a></p>

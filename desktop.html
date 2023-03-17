@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="./desktop.css">
     <title>Document</title>
 </head>
+<script>
+	var css = document.createElement("link");
+			css.setAttribute("rel", "stylesheet");
+			css.setAttribute("type", "text/css");
+			css.setAttribute("href", "./desktop.css");
+			document.head.appendChild(css);
+			
+			var loadedImages = [];
+			for (var i = 1; i < 18; i++) {
+				var image = new Image();
+				image.src = './image/Desktop/' + i + '.jpg';
+				loadedImages.push(image);
+			}
+			var k = 1;
+
+			function changeBackground() {
+				document.body.style.backgroundImage = 'url(./image/Desktop/' + k + '.jpg)';
+				k++;
+				if(k==18) k=1;
+			}
+
+			setInterval(changeBackground, 4000); // Change the background every 5 seconds
+
+	
+</script>
 <body>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
