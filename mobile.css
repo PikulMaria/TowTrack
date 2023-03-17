@@ -56,7 +56,7 @@
       animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
       
       width: 100%; 
-      float: left;
+      float: center;
       margin-right: 50px;
     }
 
@@ -115,26 +115,23 @@
        max-width: 100%;
        height: auto;
     }
-    .desktop-image {
-       display: block; /* Display desktop image by default */
-     }
-   
-     .mobile-image {
-       display: none; /* Hide mobile image by default */
-     }
+    
      .logo {                      /*Style logo*/
-      opacity: 0; /* Start with 0 opacity */
-      animation-name: fade-in; /* Name the animation */
-      animation-duration: 2s; /* Set the duration of the animation */
-      animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
+      /* Эвакуатор 24/7 */
+
+
+     
+
       font-family: 'Montserrat';
-       font-style: italic;
-       font-weight: 700;
-       font-size: 64px;
-       line-height: 78px;
-       /* identical to box height */
-       text-align: center;
-       color: #FFFFFF;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      text-align: center;
+
+      color: #FFFFFF;
+
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
      }
      
      .paragraph{
@@ -143,14 +140,18 @@
       animation-duration: 4s; /* Set the duration of the animation */
       animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
       
-       font-family: 'Montserrat';
-       font-style: italic;
-       font-weight: 700;
-       font-size: 32px;
-       line-height: 39px;
-       /* identical to box height */
-       text-align: center;
-       color: #FFFFFF;
+     
+      
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      
+      color: #FFFFFF;
+      
+      border: 1px solid #242424;
      }
      .paragraph img{
       height: 4%;
@@ -176,29 +177,33 @@
        color: #FFFFFF;
      }
      .phone{
-       font-family: 'Montserrat';
-       font-style: italic;
-       font-weight: 700;
-       font-size: 54px;
-       line-height: 66px;
-       /* identical to box height */
-       
-       text-align: center;
-       
-       color: #FFFFFF;
+      
+      
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      /* identical to box height */
+      
+      text-align: center;
+      
+      color: #FFFFFF;
+      
      }
      
      .email{
-       font-family: 'Montserrat';
-       font-style: italic;
-       font-weight: 700;
-       font-size: 40px;
-       line-height: 49px;
-       /* identical to box height */
-       
-       text-align: center;
-       
-       color: #FFFFFF;
+      
+      
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      
+      color: #FFFFFF;
+      
      }
      .circle-number-list {
       counter-reset: item;
@@ -212,17 +217,18 @@
       animation-duration: 5s; /* Set the duration of the animation */
       animation-fill-mode: forwards; /* Keep the opacity at 1 after animation is complete */
       
-      list-style-type: none;
-      margin-left: 0;
-      padding-left: 0;
-      font-family: 'Montserrat';
-       font-style: italic;
-       font-weight: 700;
-       font-size: 24px;
-       line-height: 29px;
-       text-align: center;
+      
 
-       color: #FFFFFF;
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+
+      color: #FFFFFF;
+
+      border: 1px solid #242424;
        
     }
     li{text-indent: 30px;}
@@ -237,23 +243,28 @@
       margin-bottom: 5px;
     }
     .developed{
+      
+
       font-family: 'Montserrat';
       font-style: italic;
       font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 40px;
-      margin-left: 40px;
+      font-size: 13px;
+      line-height: 16px;
       /* identical to box height */
 
-       color: #FFFFFF;
+      text-align: center;
+
+      color: #FFFFFF;
+
+      border: 2px solid #000000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 
     }
     .link{
       color: #ffffff; /* Цвет обычной ссылки */
-  position: relative;
-  cursor: pointer;
-  text-decoration: none; /* Убираем подчеркивание */
+      position: relative;
+      cursor: pointer;
+      text-decoration: none; /* Убираем подчеркивание */
     }
     .link:after{
       content: "";
