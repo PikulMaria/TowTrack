@@ -16,7 +16,21 @@
   		css.setAttribute("type", "text/css");
   		css.setAttribute("href", "./mobile.css");
   		document.head.appendChild(css);
+		  var loadedImages = [];
+			for (var i = 1; i < 18; i++) {
+				var image = new Image();
+				image.src = './image/Mobile/' + i + '.jpg';
+				loadedImages.push(image);
+			}
+			var k = 1;
 
+			function changeBackground() {
+				document.body.style.backgroundImage = 'url(./image/Mobile/' + k + '.jpg)';
+				k++;
+				if(k==18) k=1;
+			}
+
+			setInterval(changeBackground, 4000); // Change the background every 5 seconds
 } 
 else {
 		var css = document.createElement("link");
