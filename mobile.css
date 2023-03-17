@@ -55,6 +55,24 @@
       .img-container {
          flex: 0 0 100%;
       }
+      .logo{
+         position: absolute;
+         width: 279px;
+         height: 118px;
+         left: 55px;
+         top: 0px;
+
+         font-family: 'Montserrat';
+         font-style: italic;
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 59px;
+         text-align: center;
+
+         color: #FFFFFF;
+
+         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+      }
    
   
   
