@@ -28,7 +28,7 @@
        overflow: scroll;
        overflow-x: hidden;
        background: url(./image/Mobile/1.jpg) no-repeat;
-       transition: background 1s ease;
+       transition: 1s ease;
        background-size: cover;
        font-family: 'Montserrat';
        color: #fff;
