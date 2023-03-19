@@ -15,7 +15,7 @@
   		css.setAttribute("href", "./mobile.css");
   		document.head.appendChild(css);
 		  var loadedImages = [];
-			for (var i = 1; i < 18; i++) {
+			for (var i = 1; i < 17; i++) {
 				var image = new Image();
 				image.src = './image/Mobile/' + i + '.jpg';
 				loadedImages.push(image);
@@ -25,7 +25,7 @@
 			function changeBackground() {
 				document.body.style.backgroundImage = 'url(./image/Mobile/' + k + '.jpg)';
 				k++;
-				if(k==18) k=1;
+				if(k==17) k=1;
 			}
 
 			setInterval(changeBackground, 4000);
@@ -36,7 +36,7 @@
 	<div class="up-container">
 		<div class="text-container">
 			
-			<p class="logo">Эвакуатор 24/7</p>
+			<p class="logo">Эвакуатор<br>24/7</p>
 			<br>
 			<p class="paragraph">• Техпомощь на дороге •<br>• Доступные цены •<br>• Круглосуточно •</p><br>
 			
